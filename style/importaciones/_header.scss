@@ -1,0 +1,12 @@
+@import "arbol";
+
+header {
+    nav {
+        .icono-menu {
+            @include sizes(35px, 35px);
+        }
+        .logo-menu {
+            @include sizes(40%, 50%);
+        }
+    }
+}

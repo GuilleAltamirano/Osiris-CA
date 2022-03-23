@@ -1,64 +1,17 @@
-@import "media";
-@import "rrss";
-@import "footer";
-@import "arbol";
+@import "/style/importaciones/media";
+
+@import "/style/importaciones/header";
+
+@import "/style/importaciones/home";
+
+@import "/style/importaciones/fondo";
+
+@import "/style/importaciones/rrss";
+
+@import "/style/importaciones/footer";
 
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-/* Cuerpo */
-body {
-    background-color: map-get($estilos, gris);
-    header {
-        nav {
-            .icono-menu {
-                @include sizes(35px, 35px);
-            }
-            .logo-menu {
-                @include sizes(40%, 50%);
-            }
-        }
-    }
-    /* Cuerpo */
-    div {
-        .titulo-home{
-            padding: 0;
-            margin: 0;
-        }
-        #video-home{
-            width: 100%;
-        }
-    }
-    .fondo {
-        background-color: map-get($estilos, negro);
-        h1 {
-            color: beige;
-            padding: 5%;
-        }
-        h3 {
-            color: map-get($estilos, gris);
-        }
-        .texto-informatico {
-            color: map-get($estilos, gris);
-            padding: 3%;
-        }
-        .ipa-img {
-            margin-left: 13%;
-        }
-        
-        .video-historia {
-            margin-left: 13%;
-        }
-        .cuestionario {
-            @include sizes(200px, 30px);
-            border-radius: 4px;
-            margin-left: 37%;
-        }
-        .caja-comentarios {
-            margin-left: 34%;
-        }
-    }
 }

@@ -1,0 +1,31 @@
+@import "arbol";
+
+.fondo {
+    background-color: map-get($estilos, negro);
+    h1 {
+        color: beige;
+        padding: 5%;
+    }
+    h3 {
+        color: map-get($estilos, gris);
+    }
+    .texto-informatico {
+        color: map-get($estilos, gris);
+        padding: 3%;
+    }
+    .ipa-img {
+        margin-left: 13%;
+    }
+    
+    .video-historia {
+        margin-left: 13%;
+    }
+    .cuestionario {
+        @include sizes(200px, 30px);
+        border-radius: 4px;
+        margin-left: 37%;
+    }
+    .caja-comentarios {
+        margin-left: 34%;
+    }
+}
