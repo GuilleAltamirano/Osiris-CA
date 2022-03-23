@@ -1,17 +1,93 @@
-@import "../style/importaciones/media";
-
+/* header */
 @import "../style/importaciones/header";
-
+/* home */
 @import "../style/importaciones/home";
-
+/* fondo */
 @import "../style/importaciones/fondo";
-
+/* redes sociales */
 @import "../style/importaciones/rrss";
-
+/* footer */
 @import "../style/importaciones/footer";
 
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: map-get($estilos, agua);
+        font-size: 100%;
+        section {
+            div {
+                .parrafo-rrss {
+                    margin: 0;
+                    padding: 5%;
+                    font-size: 105%;
+                }
+            }
+        }
+        .fondo {
+            .video-historia {
+                margin-left: 0;
+                @include sizes(100%, 14%);
+            }
+            .ipa-img {
+                margin-left: 3%;
+                @include sizes(287.5px, 125px);
+            }
+            .cuestionario {
+                @include sizes(150px, 30px);
+                border-radius: 4px;
+                margin-left: 28%;
+            }
+            .caja-comentarios {
+                margin-left: 18%;
+            }
+        }
+        footer {
+            font-size: 80%;
+        }
+    }
+}
+
+/* 
+    Para Celulares
+    Editar la forma de las redes para que esten una debajo de otra
+*/
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: map-get($estilos, negro);
+        section {
+            grid-template-columns: 100%;
+            grid-template-rows:20% 20% 20% 20% 20%;
+        }
+        .fondo {
+            .texto-informatico {
+                font-size: 110%;
+            }
+            .video-historia {
+                margin-left: 0;
+                width: 100%;
+                height: 4.5%;
+            }
+            .ipa-img {
+                margin-left: 1%;
+                @include sizes(160px, 70px);
+            }
+            .cuestionario {
+                margin-left: 10%;
+            }
+            .caja-comentarios {
+                margin-left: 12%;
+            }
+        }
+        footer {
+            font-size: 60%;
+        }
+    }
 }
