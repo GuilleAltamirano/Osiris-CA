@@ -1,0 +1,13 @@
+$estilos:(
+    gris: #5f6368,
+    agua: #00BF8D,
+    negro: #191919,
+    centro: center,
+);
+
+/* mixins */
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}

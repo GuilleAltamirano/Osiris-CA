@@ -1,0 +1,25 @@
+@import "arbol";
+
+body {
+    section { 
+        background-image: url(../img/fondo-rrss.jpg);
+        display: grid;
+        grid-template-columns: repeat(5, 20% 20% 20% 20% 20%);
+        grid-template-rows: 1fr;
+        div {
+            .icono-rrss {
+                @include sizes(30%, 35%);
+                margin-left: 35%;
+                margin-top: 10%;
+            }
+            .parrafo-rrss {
+                text-align: map-get($estilos, centro);
+                margin: 15px;
+                padding: 15px;
+                font-family: cursive;
+                font-size: 135%;
+                color: map-get($estilos, gris);
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import "arbol";
+
+body {
+    footer {
+        background-color: map-get($estilos, agua);
+        .fondo-footer {
+            color: map-get($estilos, negro);
+            font-size: 100%;
+        }
+    }
+}

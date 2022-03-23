@@ -1,25 +1,12 @@
-@import "media.scss";
+@import "media";
+@import "rrss";
+@import "footer";
+@import "arbol";
 
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-}
-
-/* mapas */
-
-$estilos:(
-    gris: #5f6368,
-    agua: #00BF8D,
-    negro: #191919,
-    centro: center,
-);
-
-/* mixins */
-
-@mixin sizes ($width, $height) {
-    height: $height;
-    width: $width;
 }
 
 /* Cuerpo */
@@ -72,36 +59,6 @@ body {
         }
         .caja-comentarios {
             margin-left: 34%;
-        }
-    }
-    /* Redes Sociales */
-    section { 
-        background-image: url(../img/fondo-rrss.jpg);
-        display: grid;
-        grid-template-columns: repeat(5, 20% 20% 20% 20% 20%);
-        grid-template-rows: 1fr;
-        div {
-            .icono-rrss {
-                @include sizes(30%, 35%);
-                margin-left: 35%;
-                margin-top: 10%;
-            }
-            .parrafo-rrss {
-                text-align: map-get($estilos, centro);
-                margin: 15px;
-                padding: 15px;
-                font-family: cursive;
-                font-size: 135%;
-                color: map-get($estilos, gris);
-            }
-        }
-    }
-    /* Footer */
-    footer {
-        background-color: map-get($estilos, agua);
-        .fondo-footer {
-            color: map-get($estilos, negro);
-            font-size: 100%;
         }
     }
 }
