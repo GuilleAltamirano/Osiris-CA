@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+/* mapas */
+/* mixins */
+/* Cuerpo */
+body {
+  background-color: #5f6368;
+  /* Cuerpo */
+  /* Redes Sociales */
+  /* Footer */ }
+  body header nav .icono-menu {
+    height: 35px;
+    width: 35px; }
+  body header nav .logo-menu {
+    height: 50%;
+    width: 40%; }
+  body div .titulo-home {
+    padding: 0;
+    margin: 0; }
+  body div #video-home {
+    width: 100%; }
+  body .fondo {
+    background-color: #191919; }
+    body .fondo h1 {
+      color: beige;
+      padding: 5%; }
+    body .fondo h3 {
+      color: #5f6368; }
+    body .fondo .texto-informatico {
+      color: #5f6368;
+      padding: 3%; }
+    body .fondo .ipa-img {
+      margin-left: 13%; }
+    body .fondo .video-historia {
+      margin-left: 13%; }
+    body .fondo .cuestionario {
+      height: 30px;
+      width: 200px;
+      border-radius: 4px;
+      margin-left: 37%; }
+    body .fondo .caja-comentarios {
+      margin-left: 34%; }
+  body section {
+    background-image: url(./img/fondo-rrss.jpg);
+    display: grid;
+    grid-template-columns: repeat(5, 20% 20% 20% 20% 20%);
+    grid-template-rows: 1fr; }
+    body section div .icono-rrss {
+      height: 35%;
+      width: 30%;
+      margin-left: 35%;
+      margin-top: 10%; }
+    body section div .parrafo-rrss {
+      text-align: center;
+      margin: 15px;
+      padding: 15px;
+      font-family: cursive;
+      font-size: 135%;
+      color: #5f6368; }
+  body footer {
+    background-color: #00BF8D; }
+    body footer .fondo-footer {
+      color: #191919;
+      font-size: 100%; }
+
+/* Para tablet */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 100%; }
+    body section div .parrafo-rrss {
+      margin: 0;
+      padding: 5%;
+      font-size: 105%; }
+    body .fondo .video-historia {
+      margin-left: 0;
+      height: 14%;
+      width: 100%; }
+    body .fondo .ipa-img {
+      margin-left: 3%;
+      height: 125px;
+      width: 287.5px; }
+    body .fondo .cuestionario {
+      height: 30px;
+      width: 150px;
+      border-radius: 4px;
+      margin-left: 28%; }
+    body .fondo .caja-comentarios {
+      margin-left: 18%; }
+    body footer {
+      font-size: 80%; } }
+
+/* 
+    Para Celulares
+    Editar la forma de las redes para que esten una debajo de otra
+*/
+@media screen and (max-width: 425px) {
+  body {
+    background-color: #191919; }
+    body section {
+      grid-template-columns: 100%;
+      grid-template-rows: 20% 20% 20% 20% 20%; }
+    body .fondo .texto-informatico {
+      font-size: 110%; }
+    body .fondo .video-historia {
+      margin-left: 0;
+      width: 100%;
+      height: 4.5%; }
+    body .fondo .ipa-img {
+      margin-left: 3%;
+      height: 70px;
+      width: 160px; }
+    body .fondo .cuestionario {
+      margin-left: 10%; }
+    body .fondo .caja-comentarios {
+      margin-left: 12%; }
+    body footer {
+      font-size: 60%; } }

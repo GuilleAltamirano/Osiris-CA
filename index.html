@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icono-osiris.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="description" content="pagina home osiris cerveza artesanal">
+    <meta name="keywords" content="osiris, cerveza, bebidas alcohólicas, artesanal">
+    <title>Osiris CA</title>
+</head>
+<body>
+    <header>
+        <!-- Navegacion -->
+        <nav class="navbar navbar-light bg-light fixed-top bg-transparent"> <!-- Se agrega fondo transparente -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/icono-osiris.png" class="icono-menu">
+                </a>
+                <h1 class="text-white titulo-home fst-italic titulos text-center overflow-hidden">Osiris CA</h1> <!-- Ya que el fondo es transparente y el fondo oscuro, se agrega color blanco al texto -->
+                <button class="navbar-toggler bg-white bg-opacity-75" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-transparent border-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu Osiris-CA</h5> <!-- Le agrego color blanco al texto -->
+                        <button type="button" class="btn-close text-reset bg-white bg-opacity-75" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="./paginas/historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ipa's
+                                </a>
+                                <ul class="dropdown-menu bg-transparent border-white" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item text-white" href="./paginas/lupulada.html">Doble Lupulo</a></li>
+                                    <li><a class="dropdown-item text-white" href="./paginas/citra.html">Citra</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="./paginas/comentarios.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="./img/logo.png" alt="Logo de Osiris Cerveza artesanal" class="logo-menu">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Video home -->
+    <div class="conteiner">
+        <div><img src="./img/Video-Home-02.gif" alt="Video de paisaje inspirado en cervezas" id="video-home"></div>
+    </div>
+    <section>
+        <!--facebook-->
+        <div class="d-inline-block overflow-hidden">
+            <a href="http://www.facebook.com">
+                <img src="./img/facebook.png" alt="facebook" class="icono-rrss animate__animated animate__zoomInUp">
+            </a>
+            <p class ="parrafo-rrss">
+                Danos like
+                en nuestro facebook!
+            </p>
+        </div>
+        <!--instagram-->
+        <div class="d-inline-block overflow-hidden">
+            <a href="http://www.instagram.com">
+                <img src="./img/instagram.png" alt="instagram" class="icono-rrss animate__animated animate__zoomInUp">
+            </a>
+            <p class="parrafo-rrss">
+                Unete a
+                nuestro instagram!
+            </p>
+        </div>
+        <!--twitter-->
+        <div class="d-inline-block overflow-hidden">
+            <a href="http://www.twitter.com">
+                <img src="./img/twitter.png" alt="twitter" class="icono-rrss animate__animated animate__zoomInUp">
+            </a>
+            <p class="parrafo-rrss">
+                Mira nuestros
+                nuevos twits!
+            </p>
+        </div>
+        <!--youtube-->
+        <div class="d-inline-block overflow-hidden">
+            <a href="http://www.youtube.com">
+                <img src="./img/youtube.png" alt="youtube" class="icono-rrss animate__animated animate__zoomInUp">
+            </a>
+            <p class="parrafo-rrss">
+                Visitanos en
+                nuestro youtube!
+            </p>
+        </div>
+        <!--compras-->
+        <div class="d-inline-block overflow-hidden">
+            <a href="https://chat.whatsapp.com">
+                <img src="./img/carrito.png" alt="carrito" class="icono-rrss animate__animated animate__zoomInUp">
+            </a>
+            <p class="parrafo-rrss">
+                Consegui nuestras
+                cervezas!
+            </p>
+        </div>
+    </section>
+    <footer class="container-fluid fondo-footer">
+        <div class="d-flex justify-content-center">
+            <span>Politica de privacidad | bases y condiciones | terminos y condiciones | Informacion</span>
+        </div>
+        <div>
+            <p class="d-flex justify-content-center">
+                Beber con moderación. Prohibida la venta de bebidas alcohólicas a menores de 18 años - Ley Nacional de lucha contra el alcoholismo Nº 24-788. Dirección general de Defensa y Protección al Consumidor.
+            </p>
+            <p class="text-center">&#169; Osiris-CA</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

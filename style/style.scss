@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* mapas */
+
+$estilos:(
+    gris: #5f6368,
+    agua: #00BF8D,
+    negro: #191919,
+    centro: center,
+);
+
+/* mixins */
+
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+/* Cuerpo */
+body {
+    background-color: map-get($estilos, gris);
+    header {
+        nav {
+            .icono-menu {
+                @include sizes(35px, 35px);
+            }
+            .logo-menu {
+                @include sizes(40%, 50%);
+            }
+        }
+    }
+    /* Cuerpo */
+    div {
+        .titulo-home{
+            padding: 0;
+            margin: 0;
+        }
+        #video-home{
+            width: 100%;
+        }
+    }
+    .fondo {
+        background-color: map-get($estilos, negro);
+        h1 {
+            color: beige;
+            padding: 5%;
+        }
+        h3 {
+            color: map-get($estilos, gris);
+        }
+        .texto-informatico {
+            color: map-get($estilos, gris);
+            padding: 3%;
+        }
+        .ipa-img {
+            margin-left: 13%;
+        }
+        
+        .video-historia {
+            margin-left: 13%;
+        }
+        .cuestionario {
+            @include sizes(200px, 30px);
+            border-radius: 4px;
+            margin-left: 37%;
+        }
+        .caja-comentarios {
+            margin-left: 34%;
+        }
+    }
+    /* Redes Sociales */
+    section { 
+        background-image: url(../img/fondo-rrss.jpg);
+        display: grid;
+        grid-template-columns: repeat(5, 20% 20% 20% 20% 20%);
+        grid-template-rows: 1fr;
+        div {
+            .icono-rrss {
+                @include sizes(30%, 35%);
+                margin-left: 35%;
+                margin-top: 10%;
+            }
+            .parrafo-rrss {
+                text-align: map-get($estilos, centro);
+                margin: 15px;
+                padding: 15px;
+                font-family: cursive;
+                font-size: 135%;
+                color: map-get($estilos, gris);
+            }
+        }
+    }
+    /* Footer */
+    footer {
+        background-color: map-get($estilos, agua);
+        .fondo-footer {
+            color: map-get($estilos, negro);
+            font-size: 100%;
+        }
+    }
+}
+
+/* Para tablet */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 100%;
+        section {
+            div {
+                .parrafo-rrss {
+                    margin: 0;
+                    padding: 5%;
+                    font-size: 105%;
+                }
+            }
+        }
+        .fondo {
+            .video-historia {
+                margin-left: 0;
+                @include sizes(100%, 14%);
+            }
+            .ipa-img {
+                margin-left: 3%;
+                @include sizes(287.5px, 125px);
+            }
+            .cuestionario {
+                @include sizes(150px, 30px);
+                border-radius: 4px;
+                margin-left: 28%;
+            }
+            .caja-comentarios {
+                margin-left: 18%;
+            }
+        }
+        footer {
+            font-size: 80%;
+        }
+    }
+}
+
+/* 
+    Para Celulares
+    Editar la forma de las redes para que esten una debajo de otra
+*/
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: map-get($estilos, negro);
+        section {
+            grid-template-columns: 100%;
+            grid-template-rows:20% 20% 20% 20% 20%;
+        }
+        .fondo {
+            .texto-informatico {
+                font-size: 110%;
+            }
+            .video-historia {
+                margin-left: 0;
+                width: 100%;
+                height: 4.5%;
+            }
+            .ipa-img {
+                margin-left: 3%;
+                @include sizes(160px, 70px);
+            }
+            .cuestionario {
+                margin-left: 10%;
+            }
+            .caja-comentarios {
+                margin-left: 12%;
+            }
+        }
+        footer {
+            font-size: 60%;
+        }
+    }
+}
