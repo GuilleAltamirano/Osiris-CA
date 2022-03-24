@@ -65,8 +65,8 @@ body section {
 body footer {
   background-color: #00BF8D; }
   body footer .fondo-footer {
-    color: #191919;
-    font-size: 100%; }
+    color: black;
+    font-size: 110%; }
 
 * {
   margin: 0;
